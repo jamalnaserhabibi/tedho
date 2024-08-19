@@ -1,0 +1,137 @@
+.loading {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  flex-direction: column;
+  gap: 20px;
+}
+.container .form {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  padding: 0px 10px;
+  border-radius: 10px;
+  justify-content: space-around;
+  flex-direction: column;
+  align-content: space-around;
+}
+.container .form input,
+.container .form select {
+  border: 1px solid rgb(109, 109, 109);
+  outline: none;
+  width: 220px;
+  height: 35px;
+  border-radius: 7px;
+  font-size: 15px;
+  margin-left: 10px;
+}
+.container .form input {
+  padding: 10px; /* Add padding for better spacing */
+}
+.container .form .FormTitle {
+  margin: 0px;
+  color: var(--PrimaryColor);
+}
+.container .form .btnAdd {
+  background-color: var(--PrimaryColor);
+  padding: 0;
+  color: white;
+  width: 120px;
+}
+.container .form .btnAdd:hover {
+  background-color: var(--PrimaryColorHover);
+  cursor: pointer;
+}
+.container .form .filebtn {
+  transition: 0.9s cubic-bezier(0.075, 0.82, 0.165, 1);
+  width: 200px;
+  background-color: var(--PrimaryColor);
+  color: white;
+  font-size: 11px;
+}
+.container .form .filebtn:hover {
+  background-color: var(--PrimaryColorHover);
+  cursor: pointer;
+}
+.container .form .filebtn::before {
+  content: "Profile";
+  position: relative; /* or relative if you want it to be positioned relative to its normal position */
+  top: 0px; /* Adjust these values as needed */
+  width: 100px; /* Or set a specific width */
+  margin-right: -85px;
+  border-radius: 10px;
+  left: -10px;
+  font-size: 15px;
+  color: white;
+  outline: none;
+  cursor: pointer;
+  text-align: center; /* Center align text if needed */
+  display: inline-block; /* Maintain inline-block for layout consistency */
+}
+.container .form .filebtn::-webkit-file-upload-button {
+  visibility: hidden;
+}
+.container form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.container .userList .usersTable {
+  width: auto;
+  margin: 10px 0px;
+  border-collapse: collapse;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.container .userList .theader th {
+  background-color: var(--PrimaryColor);
+  padding: 8px;
+  color: white;
+}
+.container .userList tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+.container .userList td {
+  text-align: center;
+  padding: 5px;
+}
+.container .userList td .profile {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: 0.2s ease-in-out;
+  margin: -5px;
+}
+.container .userList td .profile:hover {
+  width: 60px;
+  height: 60px;
+  margin: -10px;
+}
+.container .userList .operationBtns {
+  background-color: var(--PrimaryColor);
+  color: white;
+  border-radius: 10px;
+  border: none;
+  width: 80px;
+  margin: 0 10px;
+  padding: 8px;
+  transition: 0.2s ease-in-out;
+}
+.container .userList .operationBtns:hover {
+  cursor: pointer;
+  background-color: var(--PrimaryColorHover);
+}
+.container .userList .deletebtn {
+  background-color: rgba(255, 0, 0, 0.636);
+}
+.container .userList .deletebtn:hover {
+  background-color: rgba(255, 0, 0, 0.836);
+}/*# sourceMappingURL=users.css.map */

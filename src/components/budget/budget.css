@@ -1,0 +1,8 @@
+.container .headline {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.container .headline h3 {
+  color: var(--PrimaryColor);
+}/*# sourceMappingURL=budget.css.map */

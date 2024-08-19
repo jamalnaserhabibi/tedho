@@ -1,0 +1,34 @@
+.containerTitle{
+  color: var(--PrimaryColor);
+}
+.inputs {
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+   .field{
+    margin: 0 10px;
+    width: 250px;
+   }
+   .des{
+    width: 790px;
+   }
+   .btn{
+    width: 790px;
+    color: white;
+    height: 50px;
+    background-color: var(--PrimaryColor);
+    font-size: 20px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    &:hover{
+      background-color: var(--PrimaryColorHover);
+    }
+   }
+  }
+}
+

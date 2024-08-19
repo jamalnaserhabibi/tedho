@@ -1,0 +1,180 @@
+.sidebar-main {
+  position: absolute;
+  left: 0px;
+  transition: 0.2s ease-in-out;
+  padding-top: 10px;
+  width: 250px;
+  height: 100vh;
+  border-radius: 0 20px 20px 0;
+  background-image: linear-gradient(to top, rgb(55, 76, 169), rgb(2, 14, 67));
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.sidebar-main .profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 30vh;
+}
+.sidebar-main .profile .hideSideBarIcon {
+  opacity: 0.5;
+  transition: 0.2s ease-in-out;
+  color: white;
+  position: absolute;
+  right: -15px;
+  font-size: 30px;
+  top: 50%;
+  border: 1px solid white;
+  border-radius: 50%;
+  transition: 0.1s ease-in-out;
+  background-color: var(--PrimaryColorHover);
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+.sidebar-main .profile .hideSideBarIcon:hover {
+  transform: scale(1.3);
+  opacity: 1;
+}
+.sidebar-main .profile .hideSideBarIconLocationChange {
+  transition: 0.2s ease-in-out;
+  right: -20px;
+}
+.sidebar-main .profile .profile-image {
+  width: 100%;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 20px;
+}
+.sidebar-main .profile .profile-image img {
+  margin: 3px 10px;
+  transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  width: 105px;
+  height: 105px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+.sidebar-main .profile .profile-image img:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px -54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  width: 118px;
+  height: 118px;
+}
+.sidebar-main .profile .profile-info {
+  margin: 2px;
+  border-left: 1px solid rgba(255, 255, 255, 0.469);
+  border-right: 1px solid rgba(255, 255, 255, 0.469);
+  padding: 5px 30px;
+  border-radius: 40px;
+  transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.sidebar-main .profile .profile-info:hover {
+  padding: 5px 35px;
+}
+.sidebar-main .profile h5,
+.sidebar-main .profile h4 {
+  text-align: center;
+  color: white;
+  font-weight: 800;
+}
+.sidebar-main .menu-list {
+  height: 68vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+.sidebar-main .menu-list ul {
+  list-style: none;
+  color: white;
+}
+.sidebar-main .menu-list ul a {
+  text-decoration: none;
+  color: white;
+}
+.sidebar-main .menu-list ul span {
+  transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  height: 40px;
+  width: 200px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 10px 15px;
+  border-radius: 10px;
+  margin-top: 10px;
+  background-color: rgba(255, 255, 255, 0);
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 0px 55px;
+}
+.sidebar-main .menu-list ul span li {
+  margin-left: 20px;
+}
+.sidebar-main .menu-list ul span:hover {
+  background-color: rgba(255, 255, 255, 0.139);
+  cursor: pointer;
+  padding-left: 30px;
+}
+
+.hideSideBarClass {
+  left: -240px;
+  transition: 0.2s ease-in-out;
+}
+
+.header {
+  transition: 0.2s ease-in-out;
+  width: 78.7%;
+  height: 48px;
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border-radius: 10px;
+  border-left: 2px solid var(--PrimaryColor);
+  border-right: 2px solid var(--PrimaryColor);
+}
+.header div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+}
+.header .time {
+  width: 250px;
+}
+.header .logo img {
+  width: 150px;
+}
+.header .logo {
+  justify-content: left;
+  width: 200px;
+}
+.header .logout {
+  width: 100px;
+}
+.header .logout button {
+  width: 100px;
+  height: 40px;
+  outline: none;
+  border: none;
+  background-color: var(--PrimaryColor);
+  color: white;
+  border-radius: 10px;
+  font-weight: 700;
+}
+.header .logout button:hover {
+  background-color: var(--PrimaryColorHover);
+  cursor: pointer;
+}
+
+.headerFullSize {
+  width: 98%;
+}/*# sourceMappingURL=sidebar.css.map */

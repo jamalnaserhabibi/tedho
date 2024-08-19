@@ -1,0 +1,98 @@
+body {
+  height: 100%;
+  width: 100%;
+}
+body .login-main {
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+body .login-main .loginBox {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  transition: 0.1s ease-in-out;
+  width: 30%;
+  height: 90vh;
+  border: 1px solid white;
+  border-radius: 10px;
+  background-image: linear-gradient(white, white, rgba(255, 255, 255, 0.638), rgba(255, 255, 255, 0.335), rgba(255, 255, 255, 0));
+  position: absolute;
+  right: 10%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+body .login-main .loginBox .logoBox {
+  transition: width 0.3s ease, height 0.3s ease;
+  width: 100%;
+}
+body .login-main .loginBox .logoBox .logoImage {
+  width: 100%;
+  padding: 20px;
+}
+body .login-main .loginBox .boxTitle {
+  width: 100%;
+  color: var(--PrimaryColor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .login-main .loginBox .loginInputs {
+  height: 70%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+body .login-main .loginBox .loginInputs input {
+  margin-top: 10px;
+  outline: none;
+  border: none;
+  height: 50px;
+  padding: 10px 30px;
+  border-radius: 10px;
+  font-size: 17px;
+  background-color: rgba(255, 255, 255, 0.791);
+  border: 1px solid white;
+}
+body .login-main .loginBox .loginInputs .btnSubmit {
+  margin: 40px 50px;
+  background-color: var(--PrimaryColorHover);
+  color: white;
+  font-weight: 600;
+  transition: 0.1s ease-in-out;
+}
+body .login-main .loginBox .loginInputs .btnSubmit:hover {
+  background-color: var(--PrimaryColor);
+  font-size: 18px;
+  cursor: pointer;
+}
+body .login-main .loginBox .loginInputs .icons {
+  color: gray;
+  margin: 0px;
+  position: relative;
+  left: 10px;
+  top: 43px;
+}
+body .login-main .loginBox .loginInputs .contactAdmin {
+  color: white;
+  text-align: center;
+  text-decoration: underline;
+}
+body .login-main .loginBox .loginInputs .errorShow {
+  margin: 10px 0;
+  font-weight: 600;
+  color: rgb(240, 0, 0);
+  font-size: 15px;
+  text-shadow: rgba(255, 255, 255, 0.07) 0px 1px 1px, rgba(255, 255, 255, 0.07) 0px 2px 2px, rgba(247, 247, 247, 0.07) 0px 4px 4px, rgba(255, 255, 255, 0.07) 0px 8px 8px, rgba(255, 255, 255, 0.07) 0px 16px 16px;
+}
+
+@media (max-width: 768px) {
+  body .main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  body .main .loginBox {
+    width: 80%;
+  }
+}/*# sourceMappingURL=login.css.map */

@@ -1,0 +1,197 @@
+
+.sidebar-main {
+  position: absolute;
+  left: 0px;
+  transition: 0.2s ease-in-out;
+  padding-top: 10px;
+  width: 250px;
+  height: 100vh;
+  border-radius: 0 20px 20px 0;
+  background-image: linear-gradient(to top, rgba(55, 76, 169), rgb(2, 14, 67));
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  .profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 30vh;
+    .hideSideBarIcon{
+      opacity: 0.5;
+      transition: .2s ease-in-out;
+      color: white;
+      position: absolute;
+      right: -15px;
+      font-size: 30px;
+      top: 50%;
+      border: 1px solid white;
+      border-radius: 50%;
+      transition: .1s ease-in-out;
+      background-color: var(--PrimaryColorHover);
+      box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+      &:hover{
+      // height: 40px;
+      transform: scale(1.3);
+      opacity: 1;
+
+      }
+    }
+    .hideSideBarIconLocationChange{
+      transition: .2s ease-in-out;
+      right: -20px;
+    }
+    .profile-image {
+      width: 100%;
+      height: 120px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 20px;
+      img {
+        margin: 3px 10px;
+        transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+        width: 105px;
+        height: 105px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 2px solid white;
+
+        &:hover {
+          box-shadow: rgba(0, 0, 0, 0.25) 0px -54px 55px,
+            rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+            rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+          width: 118px;
+          height: 118px;
+        }
+      }
+    }
+    .profile-info {
+      margin: 2px;
+      border-left: 1px solid rgba(255, 255, 255, 0.469);
+      border-right: 1px solid rgba(255, 255, 255, 0.469);
+      padding: 5px 30px;
+      border-radius: 40px;
+      transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+      &:hover {
+        padding: 5px 35px;
+      }
+    }
+    h5,
+    h4 {
+      text-align: center;
+      color: white;
+      font-weight: 800;
+    }
+  }
+  .menu-list {
+    height: 68vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    ul {
+      list-style: none;
+      color: white;
+      a{
+        text-decoration: none;
+        color:  white;
+      }
+      span {
+        transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        align-items: center;
+        height: 40px;
+        width: 200px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        padding: 10px 15px;
+        border-radius: 10px;
+        margin-top: 10px;
+        background-color: rgba(255, 255, 255, 0);
+        box-shadow: rgba(255, 255, 255, 0.1) 0px 0px 55px;
+
+        li {
+          margin-left: 20px;
+        
+        }
+        &:hover {
+          background-color: rgba(255, 255, 255, 0.139);
+
+          cursor: pointer;
+          padding-left: 30px;
+        }
+      }
+    }
+  }
+}
+.hideSideBarClass{
+  left: -240px;
+  transition: 0.2s ease-in-out;
+}
+.header {
+  transition: 0.2s ease-in-out;
+  width: 78.7%;
+  height: 48px;
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  // background-color: #00000019;
+  border-radius: 10px;
+  border-left: 2px solid var(--PrimaryColor);
+  border-right: 2px solid var(--PrimaryColor);
+  div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // margin: 5px;
+    height:50px;
+    // border: 1px solid red;
+  }
+.time{
+  width: 250px;
+}
+  .logo img {
+    // margin: 10px;
+    width: 150px;
+  }
+  .logo {
+   justify-content: left;
+   width: 200px;
+
+  }
+  .logout{
+    width: 100px;
+  }
+  .logout button {
+    width: 100px;
+    height: 40px;
+    outline: none;
+    border: none;
+    background-color: var(--PrimaryColor);
+    color: white;
+    border-radius: 10px;
+    font-weight: 700;
+    &:hover {
+      background-color: var(--PrimaryColorHover);
+      cursor: pointer;
+    }
+  }
+  
+}
+.headerFullSize {
+  width: 98%;
+  // border: 2px solid var(--PrimaryColor);
+
+}

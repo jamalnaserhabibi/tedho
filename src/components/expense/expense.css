@@ -1,0 +1,32 @@
+.containerTitle {
+  color: var(--PrimaryColor);
+}
+
+.inputs form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.inputs form .field {
+  margin: 0 10px;
+  width: 250px;
+}
+.inputs form .des {
+  width: 790px;
+}
+.inputs form .btn {
+  width: 790px;
+  color: white;
+  height: 50px;
+  background-color: var(--PrimaryColor);
+  font-size: 20px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.inputs form .btn:hover {
+  background-color: var(--PrimaryColorHover);
+}/*# sourceMappingURL=expense.css.map */
