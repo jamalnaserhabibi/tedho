@@ -32,7 +32,7 @@ export default function Expense() {
       const formData = new FormData();
       formData.append("budgetLine", budgetLine);
       formData.append("amount", amount);
-      formData.append("date", selectedDate.format("YYYY-MM-DD")); // Format the date
+      formData.append("date", selectedDate.format("YYYY-MM-DD")); 
       formData.append("billInfo", billInfo);
       formData.append("project", project);
       formData.append("cat", cat);
