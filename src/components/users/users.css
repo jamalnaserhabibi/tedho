@@ -1,12 +1,3 @@
-.loading {
-  position: absolute;
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .container {
   flex-direction: column;
   gap: 20px;
