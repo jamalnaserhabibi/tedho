@@ -86,10 +86,10 @@ function Sidebar() {
                 <MdDashboard /> <li> Dashboard</li>
               </span>
             </Link>
-            <Link to="/Purchase">
-              {" "}
+            <Link to="/Expense_list">
+              
               <span>
-                <BiSolidPurchaseTagAlt /> <li>Expense</li>
+                <BiSolidPurchaseTagAlt /> <li>Expense List</li>
               </span>
             </Link>
             <Link to="/Expense">

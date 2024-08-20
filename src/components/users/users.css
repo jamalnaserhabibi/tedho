@@ -1,12 +1,12 @@
 .container {
   flex-direction: column;
-  gap: 20px;
+  gap: 10px;
 }
 .container .form {
   width: 100%;
   height: 80px;
   display: flex;
-  padding: 0px 10px;
+  padding: 0px 5px;
   border-radius: 10px;
   justify-content: space-around;
   flex-direction: column;
@@ -27,6 +27,7 @@
 }
 .container .form .FormTitle {
   margin: 0px;
+  padding: 0px;
   color: var(--PrimaryColor);
 }
 .container .form .btnAdd {
@@ -72,57 +73,4 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-}
-.container .userList .usersTable {
-  width: auto;
-  margin: 10px 0px;
-  border-collapse: collapse;
-  border-radius: 10px;
-  overflow: hidden;
-}
-.container .userList .theader th {
-  background-color: var(--PrimaryColor);
-  padding: 8px;
-  color: white;
-}
-.container .userList tr:nth-child(even) {
-  background-color: #f2f2f2;
-}
-.container .userList td {
-  text-align: center;
-  padding: 5px;
-}
-.container .userList td .profile {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  transition: 0.2s ease-in-out;
-  margin: -5px;
-}
-.container .userList td .profile:hover {
-  width: 60px;
-  height: 60px;
-  margin: -10px;
-}
-.container .userList .operationBtns {
-  background-color: var(--PrimaryColor);
-  color: white;
-  border-radius: 10px;
-  border: none;
-  width: 80px;
-  margin: 0 10px;
-  padding: 8px;
-  transition: 0.2s ease-in-out;
-}
-.container .userList .operationBtns:hover {
-  cursor: pointer;
-  background-color: var(--PrimaryColorHover);
-}
-.container .userList .deletebtn {
-  background-color: rgba(255, 0, 0, 0.636);
-}
-.container .userList .deletebtn:hover {
-  background-color: rgba(255, 0, 0, 0.836);
 }/*# sourceMappingURL=users.css.map */

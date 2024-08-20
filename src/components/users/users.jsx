@@ -2,9 +2,11 @@ import React, { useState, useEffect } from "react";
 import "./users.css";
 import { useAppContext } from "../appContext";
 import axios from "axios";
-import { format } from "date-fns";
+import { format, yearsToMonths } from "date-fns";
 import { useNotification } from "../../tools/notification";
 import Loading from "../../tools/loading";
+import { Dialog } from "@mui/material";
+import confirm from "antd/es/modal/confirm";
 export default function Users() {
   const { openNotification, contextHolder } = useNotification();
   const [username, setusername] = useState("");
@@ -61,12 +63,16 @@ export default function Users() {
   };
 
   const deleteUser = (id) => {
+   const confirmm= confirm('Do you Want To delete? user ID');
+   alert(confirmm)
+   if(confirmm){
     axios
-      .delete(`http://localhost:8080/tedho/api/Users/${id}`)
-      .then(function (response) {
-        openNotification("top", response.data["status"], response.data["msg"]);
-        fetchData();
-      });
+    .delete(`http://localhost:8080/tedho/api/Users/${id}`)
+    .then(function (response) {
+      openNotification("top", response.data["status"], response.data["msg"]);
+      fetchData();
+    });
+   }
   };
 
   const { sidebarHidden } = useAppContext();
@@ -132,9 +138,9 @@ export default function Users() {
         </div>
         <hr />
           
-        <div className="form userList">
+        <div className="form tableStyle">
           <h3 className="FormTitle">User Accounts</h3>
-          <table className="usersTable">
+          <table className="table">
             <tbody>
               <tr className="theader">
                 <th>ID</th>
@@ -164,13 +170,15 @@ export default function Users() {
                     />
                   </td>
                   <td>
-                    <button className="operationBtns">Update</button>
+                  <div className="operations">
+                  <button className="operationBtns">O</button>
                     <button
                       onClick={() => deleteUser(tbluser.u_id)}
                       className="operationBtns deletebtn"
                     >
-                      Delete
+                      X
                     </button>
+                  </div>
                   </td>
                 </tr>
               ))}

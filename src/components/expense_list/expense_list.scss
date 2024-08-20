@@ -1,0 +1,26 @@
+.expense_list-main {
+  .Searchform {
+    padding-top: 10px;
+
+    // border: 1px solid red;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    h3{
+        width: auto;
+
+    }
+    form {
+      width: 85%;
+    //   border: 1px solid red;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      input {
+        height: 10px;
+        width: 100px;
+      }
+    }
+  }
+}

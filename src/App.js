@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Login from "./components/login/login";
 import Dashboard from "./components/dashboard/dashboard";
 import Sidebar from "./components/sidebar/sidebar";
-import Purchase from "./components/purchase/purchase";
+import ExpenseList from "./components/expense_list/expense_list";
 import Users from "./components/users/users";
 import Expense from "./components/expense/expense";
 import Budget from "./components/budget/budget";
@@ -33,10 +33,10 @@ function App() {
             }
           />
           <Route
-            path="/Purchase"
+            path="/Expense_list"
             element={
               <Layout>
-                <Purchase />
+                <ExpenseList />
               </Layout>
             }
           />
