@@ -17,9 +17,13 @@
       flex-direction: row;
       justify-content: space-around;
       align-items: center;
-      input {
+      input{
         height: 10px;
         width: 100px;
+      }
+      .customSelect{
+        height:43px;
+        width: 200px;
       }
     }
   }

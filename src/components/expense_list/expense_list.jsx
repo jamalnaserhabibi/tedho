@@ -2,9 +2,15 @@ import React, { useState } from "react";
 import "./expense_list.css";
 import { useAppContext } from "../appContext";
 import TextField from "@mui/material/TextField";
+import { TiDelete } from "react-icons/ti";
+import { GrUpdate } from "react-icons/gr";
 import { DatePicker } from "@mui/x-date-pickers/DatePicker";
 import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
 import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
+import Select from "@mui/material/Select";
+import FormControl from "@mui/material/FormControl";
+import InputLabel from '@mui/material/InputLabel';
+import MenuItem from "@mui/material/MenuItem";
 import dayjs from "dayjs";
 
 export default function Expense_list() {
@@ -19,6 +25,19 @@ export default function Expense_list() {
         <div className="Searchform">
           <h3 className="formtitle">Expense Search</h3>
           <form action="">
+          <FormControl >
+        <InputLabel id="demo-simple-select-label">Budget Line</InputLabel>
+        <Select
+          labelId="demo-simple-select-label"
+          id="demo-simple-select"
+          label="Budget Line"
+          className="customSelect"
+        >
+          <MenuItem value={10}>Ten</MenuItem>
+          <MenuItem value={20}>Twenty</MenuItem>
+          <MenuItem value={30}>Thirty</MenuItem>
+        </Select>
+      </FormControl>
             <LocalizationProvider dateAdapter={AdapterDayjs}>
               <DatePicker
                 required
@@ -64,25 +83,27 @@ export default function Expense_list() {
                 <td>2200</td>
                 <td>2024/2/20</td>
                 <td>
-                  Muzaffar Muzaffar Market Segit Muzaffar Market Segit Muzaffar Market Segit
+                  Muzaffar Muzaffar Market Segit Muzaffar Market Segit Muzaffar
+                  Market Segit
                 </td>
                 <td>Technical</td>
                 <td>nothing</td>
                 {/* <td>noori</td> */}
 
                 <td>
-                <div className="operations">
-                  <button className="operationBtns">O</button> 
-                  <button
-                    // onClick={() => deleteUser(tbluser.u_id)}
-                    className="operationBtns deletebtn"
-                  >
-                    X
-                  </button>
+                  <div className="operations">
+                    <button className="operationBtns">
+                      <GrUpdate />
+                    </button>
+                    <button
+                      // onClick={() => deleteUser(tbluser.u_id)}
+                      className="operationBtns deletebtn"
+                    >
+                      <TiDelete />
+                    </button>
                   </div>
                 </td>
               </tr>
-
             </tbody>
           </table>
         </div>

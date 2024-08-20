@@ -17,4 +17,8 @@
 .expense_list-main .Searchform form input {
   height: 10px;
   width: 100px;
+}
+.expense_list-main .Searchform form .customSelect {
+  height: 43px;
+  width: 200px;
 }/*# sourceMappingURL=expense_list.css.map */
